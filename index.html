@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piyush Gupta - System Engineer- DevOps Engineer_ServiceNow Engineer- Technical Consultant- Customer Sucess/IT Support Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .photo-section {
+            flex-shrink: 0;
+        }
+
+    .profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255,0.3);
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    background: rgba(255,255,255,0.1);
+}
+
+
+        .info-section {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            margin-bottom: 25px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95em;
+        }
+
+        .content {
+            padding: 50px 60px;
+        }
+
+        .section {
+            margin-bottom: 45px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #e5e6ea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #764ba2;
+        }
+
+        .summary {
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.2);
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 12px;
+            font-size: 1.1em;
+        }
+
+        .skill-category p {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .experience-item {
+            margin-bottom: 35px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #764ba2;
+            transition: transform 0.3s ease;
+        }
+
+        .experience-item:hover {
+            transform: translateX(5px);
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-size: 1.3em;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .company {
+            color: #667eea;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .date {
+            color: #888;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        .job-description {
+            margin-top: 10px;
+        }
+
+        .job-description ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .job-description li {
+            margin-bottom: 8px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 12px;
+            color: white;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+        }
+
+        .project-card h3 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .project-card p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tech-tag {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            border: 1px solid rgba(255,255,255,0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .education-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .education-item h3 {
+            color: #333;
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .education-item p {
+            color: #666;
+        }
+
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .cert-item {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 4px solid #764ba2;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .photo-upload-note {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            backdrop-filter: blur(10px);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .header, .content {
+                padding: 30px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .project-card {
+                break-inside: avoid;
+            }
+
+            .photo-upload-note {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+
+                <div class="photo-section">
+    <img src="piyush.jpeg" alt="Piyush Gupta" class="profile-photo">
+</div
+                
+                <div class="info-section">
+                    <h1>PIYUSH GUPTA</h1>
+                    <div class="subtitle">DevOps/ServiceNow Developer| Technical /IT Engineer | Customer Sucess- Technical Consultant</div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>📧</span> gupta.piyushraj471@gmail.com
+                        </div>
+                        <div class="contact-item">
+                            <span>📱</span> +91-9205920608
+                        </div>
+                        <div class="contact-item">
+                            <span>📍</span> Indore, MP, India
+                        </div>
+                        <div class="contact-item">
+                            <span>🔗</span> www.linkedin.com/in/piyush-gupta-1a0546bb
+                        </div>
+                        <div class="contact-item">
+                            <span>💻</span> github.com/guptapiyushraj471-cpu/PG_Portfolio_AI
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="summary">
+                    Results-driven System Engineer / DevOps Specialist with over 8 years of experience in infrastructure automation, ServiceNow administration, and CI/CD pipeline management across cloud and on-premise environments. Proven expertise in Windows server management, infrastructure as code (IaC), and application engineering to maintain 99.8% system uptime across 2,000+ endpoints and 150+ servers.
+Skilled in using DevOps tools such as Jenkins, Git/GitHub, Docker, and AWS Cloud to automate provisioning, configuration, and deployment workflows. Proficient in Python scripting, Power BI analytics, ServiceNow development, and monitoring solutions to improve performance, reduce downtime by 30%, and enhance system observability.
+Collaborative and detail-oriented professional with strengths in incident management, problem resolution, customer success, and cross-functional project coordination. Passionate about building scalable, secure, and resilient infrastructure that supports continuous delivery and operational excellence.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>DevOps & Cloud</h3>
+                        <p>CI/CD (Jenkins, GitLab CI), Docker,Git Version Control</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Monitoring & Observability</h3>
+                        <p> System Performance Monitoring, Log Analysis, Alerting & Incident Management</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Programming & Scripting</h3>
+                        <p>Python, Django, Bash/Shell Scripting, C/C++, JavaScript, REST APIs, Automation Scripts, Ai Automation</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>IT & Systems</h3>
+                        <p>System Administration, Windows Server, Network Configuration, Database Administration (MySQL, PostgreSQL)</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <p>Jenkins, Power BI, GitHub, Saleforce, ServiceNow, ChatOps (Slack/MS Teams), Asana, HubSpot, Google Workspace</p>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps/Cloud Practices</h3>
+                        <p>Continuous Integration/Deployment, Infrastructure Automation, Incident Response, Root Cause Analysis, SLA Management, Agile/Scrum</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Project Portfolio</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>🚀 ChatOps + Jenkins Integration Platform</h3>
+                        <p>Built automated ChatOps solution integrating Jenkins CI/CD pipelines with Slack for real-time build notifications and deployment controls. Implemented slash commands for triggering builds, checking deployment status, and retrieving logs. Reduced deployment coordination time by 40%.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Slack API</span>
+                            <span class="tech-tag">Webhooks</span>
+                           
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>🔍 Incident Analyzer & RCA Automation Tool</h3>
+                        <p>Developed Python-based incident analysis system that automatically categorizes, prioritizes, and suggests root causes for infrastructure incidents. Integrated ML algorithms to identify patterns and predict failures. Reduced incident resolution time by 30%.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>✈️ Travel Website with CI/CD Pipeline</h3>
+                        <p>Designed and deployed full-stack travel booking website with automated CI/CD pipeline. Implemented containerized microservices architecture with Kubernetes orchestration. Set up comprehensive monitoring using Prometheus, Grafana, and ELK stack.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>📊  Monitoring Dashboard</h3>
+                        <p>Architected comprehensive monitoring solution for 2,000+ devices and 150+ servers with real-time performance tracking. Automated data collection from multiple sources. Created executive dashboards improving infrastructure reliability by 25%.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">REST APIs</span>
+                            <span class="tech-tag">SQL Server</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Technical/System Engineer -Operations</div>
+                            <div class="company">47Billion Pvt. Ltd.</div>
+                            <div style="color: #888; font-size: 0.9em;">Client: L Squared Digital Signage (USA/Canada)</div>
+                        </div>
+                        <div class="date">June 2023 – Oct 2025 </div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Engineered and maintained high-availability infrastructure supporting 2,000+ digital signage devices and 150+ servers, achieving 99.8% uptime SLA</li>
+                            <li>Developed automated monitoring and alerting systems using Python scripts, reducing incident detection time by 45%</li>
+                            <li>Designed Power BI dashboards for real-time infrastructure health monitoring and incident tracking</li>
+                            <li>Conducted comprehensive root cause analysis on critical failures, reducing recurring incidents by 30%</li>
+                            <li>Automated deployment and configuration management workflows, decreasing manual intervention by 60%</li>
+                            <li>Collaborated with development teams to establish CI/CD best practices and streamline releases</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Senior Technical Consultant  </div>
+                            <div class="company">Intallis</div>
+                        </div>
+                        <div class="date">July 2022 – June 2023</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Analyzed infrastructure performance data to identify bottlenecks and implement automation solutions improving efficiency by 20%</li>
+                            <li>Supported multi-client operations through proactive network monitoring and performance optimization</li>
+                            <li>Created comprehensive technical documentation for deployment procedures, runbooks, and incident response</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Technical Support Specialist</div>
+                            <div class="company">TaskUs (Project Revolut)</div>
+                        </div>
+                        <div class="date">March 2021 – April 2022</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Analyzed system performance data and incident patterns for fintech platform supporting millions of transactions</li>
+                            <li>Generated automated reports on SLA compliance and operational efficiency using Python</li>
+                            <li>Collaborated with DevOps and QA teams to implement monitoring improvements, reducing MTTR by 35%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Junior Software Engineer / DevOps Support</div>
+                            <div class="company">Vacnic IT Solutions Pvt. Ltd.</div>
+                        </div>
+                        <div class="date">2020 – 2021</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Developed backend services and automation scripts for system monitoring and deployment</li>
+                            <li>Assisted in CI/CD pipeline implementation for web-based applications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                    <div class="job-header">
+                        <div>
+                            <div class="job-title">Technical Support Specialist</div>
+                            <div class="company">Teleperformance (Project Mastercard) </div>
+                        </div>
+                        <div class="date">July 2018 – June 2020</div>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>•	Provided tier-2 technical support for Mastercard's internal systems, ensuring 24/7 application availability</li>
+                            <li>•	Conducted data-driven analysis on incident volumes to identify patterns and optimize support processes</li>
+                            <li>•	Maintained cross-functional communication between operations, development, and security teams</li>
+                        </ul>
+
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Technology in Electronics & Communication Engineering</h3>
+                    <p>Patel College of Science & Technology (RGPV University) | 2010 – 2014</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certifications">
+                    <div class="cert-item">Excel+AI+GPT+ SQL/MYSQL/GIT/GitHub/ServiceNow Administration&Devlopment (2024–2025)</div>
+                    <div class="cert-item">Django & Python Full Stack Development (2022–2023)</div>
+                    <div class="cert-item">C/C++ Programming (2021–2022)</div>
+                    <div class="cert-item">Web Development: HTML, CSS, JavaScript, Bootstrap</div>
+                    <div class="cert-item">HubSpot Service Certifications</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Add functionality to upload and display a custom photo
+        // This script allows users to click the photo area and upload their image
+        document.addEventListener('DOMContentLoaded', function() {
+            const photoElement = document.querySelector('.profile-photo');
+            
+            // Create file input
+            const fileInput = document.createElement('input');
+            fileInput.type = 'file';
+            fileInput.accept = 'image/*';
+            fileInput.style.display = 'none';
+            document.body.appendChild(fileInput);
+            
+            // Make photo clickable
+            photoElement.style.cursor = 'pointer';
+            photoElement.title = 'Click to upload your photo';
+            
+            photoElement.addEventListener('click', function() {
+                fileInput.click();
+            });
+            
+            // Handle file selection
+            fileInput.addEventListener('change', function(e) {
+                const file = e.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        photoElement.innerHTML = '';
+                        photoElement.style.backgroundImage = `url(${e.target.result})`;
+                        photoElement.style.backgroundSize = 'cover';
+                        photoElement.style.backgroundPosition = 'center';
+                    };
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
